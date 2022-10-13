@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BT tuan 4</title>
+        <meta charset="utf-8">   
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        
+      </head>
+
+    <body> <br>   
+       
+         <h2 style="font-family:'Times New Roman', Times, serif"><i> Trần Tuấn Anh - B19DCDT016</i></h2>
+        <div class="container border border-dark " >
+            <div class="row">   
+                <div class="col " id="box1"> 
+                    <h2>NHIỆT ĐỘ</h2>
+                         <p id="nd"></p>
+                </div>
+                <div class="col " id="box2">
+                    <h2>ĐỘ ẨM</h2>
+                        <p id="da"></p>
+                
+                </div>
+                <div class="col " id="box3">
+                    <h2>ÁNH SÁNG</h2>
+                    <p id="as"></p>
+                    
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-8" style="background-image: 
+                linear-gradient(to bottom right,rgb(250, 239, 239), rgb(214, 190, 194),rgb(173, 176, 23));"><br>
+                     <img src ="https://www.luyenthithukhoa.vn/attachments/01-png.41510/" id="image" style="visibility:hidden">
+                        <script >
+                        
+                        function tn() {
+                            document.getElementById('image').style.visibility='hidden';
+                        }
+                        function td(){
+                            document.getElementById('image').style.visibility='visible'
+                        }
+                        
+                        </script>
+                        <input type="button" onclick="td()" value="Hiển thị">
+                        <input type="button" onclick="tn()" value="Đóng">                     
+                </div>
+
+                <div class="col-4" > <br><br>
+                    <div > <p>LED 1</p>
+                        <script>
+                            
+                        </script>
+                        <img src="dentat.jpg" id="image2" style="width:50px"><br>
+                        <div class="btn-group" id="bg">
+                            <button id="bt1" onclick="myFunction4()">ON</button>
+                            <button id="bt2" onclick="myFunction4()">OFF</button>
+                          
+                        </div>
+                    </div> <pre>
+                    </pre>
+                    <div class="col-lg">
+                        <p>LED 2</p>
+                        <img src="https://static.beecost.vn/upload/uploads/2020/02/den-3-300x300.jpg" id="image3" style="width:50px"><br>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                          </label>
+                    </div>     
+                </div>
+            </div>
+<script src="iot.js"></script>
+<p id="dongho"></p>
+<script>document.getElementById("dongho").innerHTML=Date()</script>
+    </body>
+</html>
